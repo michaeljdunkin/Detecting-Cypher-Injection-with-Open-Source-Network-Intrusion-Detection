@@ -1,0 +1,8 @@
+install mysql	https://access.redhat.com/documentation/fr-fr/red_hat_enterprise_linux/9/html/configuring_and_using_database_servers/installing-mysql_assembly_using-mysql
+sudo mysql	
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm	https://snapcraft.io/install/mysql-workbench-community/rhel
+sudo dnf upgrade	https://snapcraft.io/install/mysql-workbench-community/rhel
+sudo yum install snapd	https://snapcraft.io/install/mysql-workbench-community/rhel
+sudo systemctl enable --now snapd.socket	https://snapcraft.io/install/mysql-workbench-community/rhel
+sudo ln -s /var/lib/snapd/snap /snap	https://snapcraft.io/install/mysql-workbench-community/rhel
+sudo snap install mysql-workbench-community	https://snapcraft.io/install/mysql-workbench-community/rhel

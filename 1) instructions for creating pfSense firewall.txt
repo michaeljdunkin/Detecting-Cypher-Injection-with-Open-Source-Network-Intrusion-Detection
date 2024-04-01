@@ -1,0 +1,23 @@
+https://www.gns3network.com/how-to-install-pfsense-firewall-in-vmware-workstation/		
+add virtual network 192.168.100.0/24		
+2 vcpu		
+4 GB memory		
+2 network adapters		
+pfctl -d	disable packet filter	
+		
+hostname: pfSense		
+domain: CypherInjectionTest.arpa		
+snort setup	https://forum.netgate.com/topic/55095/quick-snort-setup-instructions-for-new-users	
+oink code	6c9e97b95c516a36062abe4deaec4ed17eff0af5	
+		
+Rule set is current as of January 12 4:43pm CST		
+Rule set contains the following: 		
+	snort subscriber rules	
+	Snort GPLv2 Community Rules	
+	Emerging Threat Open Rules	
+	Sourcefire OpenAppId detectors	
+	Sourcefire AppId Open Text Rules	
+	FEODO Tracker Botnet C2 IP Rules	
+		
+configuration of networks	https://www.youtube.com/watch?v=gi5hkNfrwOI	
+	https://www.youtube.com/watch?v=QB9V_AqN_ro	

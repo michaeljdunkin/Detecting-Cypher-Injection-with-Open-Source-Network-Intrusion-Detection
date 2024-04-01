@@ -1,0 +1,18 @@
+NOTE: I installed this on both the data server and the client so I could access cypher-shell from both
+sudo su
+yum install java-17-openjdk
+"rpm --import https://debian.neo4j.com/neotechnology.gpg.key
+cat << EOF >  /etc/yum.repos.d/neo4j.repo
+[neo4j]
+name=Neo4j RPM Repository
+baseurl=https://yum.neo4j.com/stable/5
+enabled=1
+gpgcheck=1
+EOF
+"
+yum install neo4j-5.16.0
+vi /etc/neo4j/neo4j.conf and uncomment: server.default_listen_address=0.0.0.0=true
+neo4j-admin server start
+ALTER CURRENT USER SET PASSWORD FROM 'neo4j' TO '[set a password]'
+
+For instructions on building a bank fraud detection graph, see https://github.com/neo4j-contrib/gists/blob/master/other/BankFraudDetection.adoc
